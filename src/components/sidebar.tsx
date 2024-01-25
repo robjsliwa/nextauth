@@ -12,12 +12,6 @@ import {
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 
-// const navigation = [
-//   { name: 'Dashboard', href: '/dashboard', icon: HomeIcon, current: true },
-//   { name: 'Users', href: '/users', icon: UsersIcon, current: false },
-//   { name: 'Teams', href: '/teams', icon: FolderIcon, current: false },
-// ]
-
 const userNavigation = [
   { name: 'Your profile', href: '#' },
   { name: 'Sign out', href: '#' },
@@ -92,7 +86,7 @@ export default function Sidebar({ children }: SidebarProps) {
                       </button>
                     </div>
                   </Transition.Child>
-                  {/* Sidebar component, swap this element with another sidebar if you like */}
+
                   <div className="flex grow flex-col gap-y-5 overflow-y-auto bg-white px-6 pb-4">
                     <div className="flex h-16 shrink-0 items-center">
                       <img
@@ -149,10 +143,7 @@ export default function Sidebar({ children }: SidebarProps) {
             </div>
           </Dialog>
         </Transition.Root>
-
-        {/* Static sidebar for desktop */}
         <div className="hidden lg:fixed lg:inset-y-0 lg:z-50 lg:flex lg:w-72 lg:flex-col">
-          {/* Sidebar component, swap this element with another sidebar if you like */}
           <div className="flex grow flex-col gap-y-5 overflow-y-auto border-r border-gray-200 bg-white px-6 pb-4">
             <div className="flex h-16 shrink-0 items-center">
               <img
@@ -212,18 +203,14 @@ export default function Sidebar({ children }: SidebarProps) {
               <span className="sr-only">Open sidebar</span>
               <Bars3Icon className="h-6 w-6" aria-hidden="true" />
             </button>
-
-            {/* Separator */}
             <div className="h-6 w-px bg-gray-200 lg:hidden" aria-hidden="true" />
 
             <div className="flex flex-1 gap-x-4 self-stretch lg:gap-x-6">
               <div className="relative flex-1 block h-full w-full"/>
               <div className="flex items-center gap-x-4 lg:gap-x-6">
 
-                {/* Separator */}
                 <div className="hidden lg:block lg:h-6 lg:w-px lg:bg-gray-200" aria-hidden="true" />
 
-                {/* Profile dropdown */}
                 <Menu as="div" className="relative">
                   <Menu.Button className="-m-1.5 flex items-center p-1.5">
                     <span className="sr-only">Open user menu</span>
