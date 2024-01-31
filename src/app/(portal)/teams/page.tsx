@@ -1,3 +1,3 @@
 export default function Dashboard() {
-    return <div>Teams</div>;
-  }
+  return <div>Teams</div>;
+}
