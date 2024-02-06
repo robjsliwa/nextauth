@@ -1,6 +1,6 @@
 # next-auth
 
-This is a companion code for my article: Quick Start to Productivity With Next.js and Vercel
+This is a companion code for my article: [Quick Start to Productivity With Next.js and Vercel](https://medium.com/@robjsliwa_71070/quick-start-to-productivity-with-next-js-and-vercel-5162cd5836d5).
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
